@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Enterprise Active Directory and Group Policy Auditor - PowerShell project by Justin Maddox">
+
+    <title>Enterprise AD & GPO Auditor | Justin Maddox</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="project-page">
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Justin Maddox
+            </a>
+
+            <nav>
+
+                <a href="index.html#projects">
+                    Projects
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="index.html#certifications">
+                    Certifications
+                </a>
+
+                <a href="resume/Justin-Maddox-Resume.pdf" target="_blank">
+                    Resume
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Project Hero -->
+
+        <section class="project-hero">
+
+            <div class="container">
+
+                <a href="index.html#projects" class="back-link">
+                    ← Back to Projects
+                </a>
+
+                <h1>
+                    Enterprise AD & GPO Auditor
+                </h1>
+
+                <p class="project-hero-description">
+
+                    A PowerShell-based Active Directory auditing tool designed
+                    to simulate enterprise infrastructure health and security
+                    reviews.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span>PowerShell</span>
+                    <span>Active Directory</span>
+                    <span>Group Policy</span>
+                    <span>Security Auditing</span>
+                    <span>Automation</span>
+
+                </div>
+
+                <div class="project-meta">
+
+                    <div>
+                        <span class="meta-label">STATUS</span>
+                        <strong>Completed</strong>
+                    </div>
+
+                    <div>
+                        <span class="meta-label">TYPE</span>
+                        <strong>Infrastructure / Security</strong>
+                    </div>
+
+                    <div>
+                        <span class="meta-label">ENVIRONMENT</span>
+                        <strong>Windows / Active Directory</strong>
+                    </div>
+
+                </div>
+
+                <div class="project-hero-actions">
+
+                    <a
+                        href="https://github.com/jus7591/Enterprise-AD-GPO-Auditor"
+                        target="_blank"
+                        class="button primary">
+
+                        View Source on GitHub
+
+                    </a>
+
+                    <a
+                        href="index.html#projects"
+                        class="button secondary">
+
+                        Back to Portfolio
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Overview -->
+
+        <section class="section">
+
+            <div class="container project-content">
+
+                <div>
+
+                    <p class="section-label">
+                        OVERVIEW
+                    </p>
+
+                    <h2>
+                        What I Built
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        The Enterprise AD & GPO Auditor is a PowerShell-based
+                        auditing tool designed to collect information from
+                        Windows and Active Directory environments, identify
+                        potential security and configuration issues, and
+                        generate actionable recommendations.
+
+                    </p>
+
+                    <p>
+
+                        The project was designed around the type of health
+                        checks and security reviews commonly performed by
+                        Systems Administrators, Active Directory
+                        Administrators, and Infrastructure Engineers.
+
+                    </p>
+
+                    <p>
+
+                        The tool includes a Test Mode so the auditing and
+                        reporting functionality can be developed and
+                        demonstrated without requiring access to a production
+                        Active Directory environment.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Capabilities -->
+
+        <section class="section alternate">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        CAPABILITIES
+                    </p>
+
+                    <h2>
+                        What the Auditor Checks
+                    </h2>
+
+                </div>
+
+
+                <div class="capability-grid">
+
+                    <div class="capability-card">
+
+                        <h3>
+                            User Auditing
+                        </h3>
+
+                        <p>
+
+                            Reviews account status, password expiration
+                            configuration, stale accounts, locked accounts,
+                            and service account configuration.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <h3>
+                            Computer Auditing
+                        </h3>
+
+                        <p>
+
+                            Reviews computer objects, operating systems,
+                            disabled accounts, stale systems, and outdated
+                            Windows installations.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <h3>
+                            Group Policy
+                        </h3>
+
+                        <p>
+
+                            Inventories Group Policy Objects and identifies
+                            disabled or unlinked policies that may require
+                            review.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <h3>
+                            Security Auditing
+                        </h3>
+
+                        <p>
+
+                            Reviews password policy settings, privileged
+                            access, service accounts, and other security
+                            configuration concerns.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <h3>
+                            Recommendation Engine
+                        </h3>
+
+                        <p>
+
+                            Converts audit findings into severity-rated,
+                            actionable remediation recommendations.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <h3>
+                            HTML Reporting
+                        </h3>
+
+                        <p>
+
+                            Generates an easy-to-read HTML report containing
+                            executive-level risk information, findings, and
+                            recommendations.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Architecture -->
+
+        <section class="section">
+
+            <div class="container project-content">
+
+                <div>
+
+                    <p class="section-label">
+                        ARCHITECTURE
+                    </p>
+
+                    <h2>
+                        Project Structure
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        The project is organized into separate auditing and
+                        reporting components so that each area of the
+                        environment can be analyzed independently.
+
+                    </p>
+
+
+                    <pre class="code-block"><code>Configuration
+    ↓
+Environment Validation
+    ↓
+Domain Audit
+    ↓
+User Audit
+    ↓
+Computer Audit
+    ↓
+Group Policy Audit
+    ↓
+Security Audit
+    ↓
+Recommendation Engine
+    ↓
+HTML Report Engine</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Screenshots -->
+
+        <section class="section alternate">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        RESULTS
+                    </p>
+
+                    <h2>
+                        Example Audit Reports
+                    </h2>
+
+                    <p>
+
+                        The auditor converts collected data and findings into
+                        an HTML report designed to provide both technical
+                        detail and an executive-level summary.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Executive Summary -->
+
+                <div class="project-screenshot">
+
+                    <h3>
+                        Executive Summary
+                    </h3>
+
+                    <p>
+
+                        Provides an overall risk assessment and summarizes
+                        the most important security concerns identified during
+                        the audit.
+
+                    </p>
+
+                    <img
+                        src="images/ad-gpo-auditor/executive-summary.png"
+                        alt="Enterprise AD and GPO Auditor executive summary">
+
+                </div>
+
+
+                <!-- Recommendations -->
+
+                <div class="project-screenshot">
+
+                    <h3>
+                        Recommendations
+                    </h3>
+
+                    <p>
+
+                        Displays severity-rated findings along with
+                        recommended remediation actions.
+
+                    </p>
+
+                    <img
+                        src="images/ad-gpo-auditor/recommendations.png"
+                        alt="Enterprise AD and GPO Auditor recommendations">
+
+                </div>
+
+
+                <!-- Security Findings -->
+
+                <div class="project-screenshot">
+
+                    <h3>
+                        Security Findings
+                    </h3>
+
+                    <p>
+
+                        Provides detailed security audit results collected
+                        from the simulated Active Directory environment.
+
+                    </p>
+
+                    <img
+                        src="images/ad-gpo-auditor/security-findings.png"
+                        alt="Enterprise AD and GPO Auditor security findings">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- What I Learned -->
+
+        <section class="section">
+
+            <div class="container project-content">
+
+                <div>
+
+                    <p class="section-label">
+                        EXPERIENCE
+                    </p>
+
+                    <h2>
+                        What I Learned
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+
+                        This project helped reinforce how Active Directory
+                        objects, Group Policy, authentication settings, and
+                        privileged access relate to overall enterprise
+                        security.
+
+                    </p>
+
+                    <p>
+
+                        I also gained practical experience designing PowerShell
+                        functions around shared report data, processing
+                        findings, generating recommendations, and converting
+                        technical results into an HTML report intended for
+                        different audiences.
+
+                    </p>
+
+                    <p>
+
+                        Building a Test Mode also reinforced the importance of
+                        developing administrative tooling in a controlled
+                        environment before using it against production
+                        infrastructure.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Technologies -->
+
+        <section class="section alternate">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        TECHNOLOGIES
+                    </p>
+
+                    <h2>
+                        Technologies Used
+                    </h2>
+
+                </div>
+
+
+                <div class="skill-list">
+
+                    <span>PowerShell</span>
+                    <span>Windows</span>
+                    <span>Active Directory</span>
+                    <span>Group Policy</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Automation</span>
+                    <span>Security Auditing</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Links -->
+
+        <section class="section contact-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    PROJECT
+                </p>
+
+                <h2>
+                    Explore the Project
+                </h2>
+
+                <p>
+
+                    View the source code, documentation, and additional
+                    project information on GitHub.
+
+                </p>
+
+
+                <div class="contact-links">
+
+                    <a
+                        href="https://github.com/jus7591/Enterprise-AD-GPO-Auditor"
+                        target="_blank"
+                        class="button primary">
+
+                        View on GitHub
+
+                    </a>
+
+
+                    <a
+                        href="index.html#projects"
+                        class="button secondary">
+
+                        Back to Projects
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Justin Maddox
+            </p>
+
+            <p>
+                IT Infrastructure • Networking • PowerShell • Automation
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+```

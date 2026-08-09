@@ -78,7 +78,7 @@ nav a:hover {
 ========================================================= */
 
 .hero {
-    padding: 120px 0 100px;
+    padding: 50px 0 100px;
     border-bottom: 1px solid #1f2937;
 }
 
@@ -176,7 +176,7 @@ nav a:hover {
 ========================================================= */
 
 .section {
-    padding: 100px 0;
+    padding: 25px 0;
 }
 
 .section.alternate {
@@ -209,6 +209,16 @@ nav a:hover {
     gap: 25px;
 }
 
+.project-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border: 1px solid #263244;
+}
+
 .project-card {
     background: #111827;
     border: 1px solid #1f2937;
@@ -233,6 +243,19 @@ nav a:hover {
     gap: 10px;
     margin-bottom: 20px;
     flex-wrap: wrap;
+}
+
+.project-screenshot img {
+    display: block;
+    width: 85%;
+    max-width: 1000px;
+    max-height: 600px;
+    object-fit: contain;
+    object-position: top;
+    margin: 20px auto 0;
+    background: #020617;
+    border: 1px solid #263244;
+    border-radius: 6px;
 }
 
 .project-status,
@@ -442,4 +465,186 @@ footer .container {
         flex-direction: column;
     }
 }
-```
+
+```css
+/* =========================================================
+   AD & GPO Auditor Project Page
+   Scoped to .project-page so it does not affect homepage
+========================================================= */
+
+.project-page .project-hero {
+    padding: 100px 0 80px;
+    background: #0b1120;
+    border-bottom: 1px solid #1f2937;
+}
+
+.project-page .back-link {
+    display: inline-block;
+    color: #38bdf8;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.project-page .back-link:hover {
+    color: #7dd3fc;
+}
+
+.project-page .project-hero h1 {
+    max-width: 900px;
+    color: #ffffff;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.project-page .project-hero-description {
+    max-width: 800px;
+    color: #9ca3af;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* Project metadata */
+
+.project-page .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #1f2937;
+}
+
+.project-page .project-meta > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project-page .meta-label {
+    color: #64748b;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.project-page .project-meta strong {
+    color: #e5e7eb;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* Capability cards */
+
+.project-page .capability-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-page .capability-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.project-page .capability-card h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.project-page .capability-card p {
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+
+/* Architecture */
+
+.project-page .code-block {
+    background: #020617;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 25px;
+    overflow-x: auto;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+
+/* Screenshots */
+
+.project-page .project-screenshot {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.project-page .project-screenshot h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project-page .project-screenshot p {
+    color: #9ca3af;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-page .project-screenshot img {
+    display: block;
+    width: 85%;
+    max-width: 1000px;
+    max-height: 600px;
+    object-fit: contain;
+    margin: 0 auto;
+    background: #020617;
+    border: 1px solid #263244;
+    border-radius: 6px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .project-page .project-hero {
+        padding: 70px 0 60px;
+    }
+
+    .project-page .project-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .project-page .project-meta {
+        gap: 20px;
+    }
+
+    .project-page .capability-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-page .project-screenshot {
+        padding: 20px;
+    }
+
+    .project-page .project-screenshot img {
+        width: 100%;
+    }
+
+}
+
+.project-page .project-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+

@@ -1,4 +1,3 @@
-```css
 /* =========================================================
    Base
 ========================================================= */
@@ -123,6 +122,16 @@ nav a:hover {
     border-radius: 6px;
     font-weight: 600;
     transition: all 0.2s ease;
+}
+
+.button.demo {
+    padding: 20px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 1px solid #374151;
+    color: #e5e7eb;
+    float: right;
 }
 
 .button.primary {
@@ -466,7 +475,6 @@ footer .container {
     }
 }
 
-```css
 /* =========================================================
    AD & GPO Auditor Project Page
    Scoped to .project-page so it does not affect homepage
